@@ -1,0 +1,127 @@
+@font-face
+{
+    font-family: FontONE;
+    src: url('1.otf') format('truetype');
+    font-display: auto;
+}
+
+div.cat
+{
+    display: inline-block;
+    border: 2px solid gray;
+    margin-bottom: 1%;
+    /*width: 32.9%;*/
+    width: 625px;
+    height: 80%;
+    line-height: 1%;
+    background: black;
+}
+
+div:hover
+{
+    -webkit-transform: scale(1.07);
+    -ms-ransform: scale(1.07);
+    transform: scale(1.07);
+    transition: 1s;
+}
+
+img:hover
+{
+    -webkit-transform: rotate(6deg);
+    -ms-ransform: rotate(6deg);
+    transform: rotate(6deg);
+    transition: 1s;
+}
+
+a:hover
+{
+    color: yellow;
+}
+
+body
+{
+    margin: 0;
+    background: black;
+    color: white;
+}
+
+img
+{
+    width: 100%;
+    height: 500px;
+}
+
+a
+{
+    text-decoration: none;
+    color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.nameOftheSite
+{
+    width: 50%;
+    margin-left: 35%;
+    margin-bottom: 1.5%;
+    margin-top: 1%;
+    border: 0;
+    font-size: 200%;
+    font-family: fontONE;
+    font-weight: bold;
+    color: bisque;
+}
+
+.info
+{
+    display: none;
+}
+
+p
+{
+    margin: 4%;
+}
+
+.picmen,
+.picmen1
+{
+    width: 35px;
+    height: 35px;
+}
+
+.menuButt,
+.picmen
+{
+    display: none;
+}
+
+.menuButt:checked ~ label .picmen
+{
+    display: block;
+}
+
+.menuButt:checked ~ label .picmen1
+{
+    display: none;
+}
+
+.menuButt:checked ~ main .cat
+{
+    display: block;
+    margin-left: 35%;
+}
+
+.menuButt:checked ~ main .info
+{
+    display: block;
+    hyphens: auto;
+    line-height: 120%;
+}
+
+.menuButt:checked ~ main .age,
+.menuButt:checked ~ main .breed,
+.menuButt:checked ~ main .dis,
+.menuButt:checked ~ main .stat
+{
+    display: none;
+}
